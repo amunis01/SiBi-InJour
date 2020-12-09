@@ -8,7 +8,7 @@
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-btn
-        href="https://github.com/amunis01/SiBi-InJou"
+        href="https://github.com/amunis01/SiBi-InJour"
         target="_blank"
         text
         >
