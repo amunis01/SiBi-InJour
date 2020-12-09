@@ -41,7 +41,7 @@ app.get("/cogerSubcategorias",(req,res)=>{
     var session = driver.session();
     console.log("Parte de dar la Subcategoria para hacer listado");
     var subcat=[];
-    var query="match(n:Subcategoria) return n.nombre"
+    var query="match(n:Subcategoria) return n"
     const resultadoPromesa = session.run(query).subscribe({
         onNext: function (result) {
             //console.log(result.get(0));
@@ -87,19 +87,27 @@ app.post("/recomendRevista",(req,res)=>{
     var subcat=req.body.subcategoria;
     var pais=req.body.nacion;
     var query="";
-    if (pais!="Elige Nacion de procedencia"){
+    var revistas=[];
+    var revistasAux=[];
+    if (pais!="Elige Nación de procedencia si quiere"){
         query+="match (n)-[:PAIS_PROCEDENCIA]->(p:Nacion) where p.nombrePais='"+ pais +"' with n ";
     }
     //console.log(subcat);
-    var revistas=[];
-    query+="match (n:Journal)-[a:TIENE_ARTICULOS_SOBRE]->(s:Subcategoria) where s.nombreCategoria='"+ subcat +"' with  n order by a.valor descending limit 3 return n order by n.sjr desc"
+    
+    query+="match (n:Journal)-[a:TIENE_ARTICULOS_SOBRE]->(s:Subcategoria) where s.nombreCategoria='"+ subcat +"' with  n order by a.valor descending limit 3 return n  order by n.sjr desc"
     const resultadoPromesa = session.run(query).subscribe({
         onNext: function (result) {
             //console.log(result.get(0));
-            revistas.push(result.get(0));
+            revistasAux.push(result.get(0));
         },
         onCompleted: function () {
-            //console.log(revistas.length);
+            //console.log(revistasAux);
+
+            for (let index = 0; index < revistasAux.length; index++) {
+                var element = revistasAux[index].properties;
+                console.log(element);
+                revistas.push(element)
+            }    
             res.send(revistas);
             session.close();
         
@@ -122,22 +130,24 @@ app.post("/busquedaRevista",(req,res)=>{
     var queryCompleta=false;
     var query="";
     var revistas=[];
+    var revistasAux=[];
+
     /*if(area!="Elige el area de la reviosta"){
         //Para futuro En el que haya más Areas en la base de datos
     }*/
-    if (pais!="Elige Nacion de procedencia"){
+    if (pais!="Elige Nación de procedencia"){
         query+="match (n)-[:PAIS_PROCEDENCIA]->(p:Nacion) where p.nombrePais='"+ pais +"' with n ";
         datoBuscado=true;
         console.log("a");
     }
 
-    if(subcat!="Eliga una categoria ..."){
+    if(subcat!="Elige una categoria"){
         query+="match (n)-[:TIENE_ARTICULOS_SOBRE]->(p:Subcategoria) where p.nombreCategoria='"+ subcat +"' with n ";
         datoBuscado=true;
         console.log("b");
     }
 
-    if(nombre_publisher!="Nombre o Publisher de la revista"){
+    if(nombre_publisher!=""){
         query+="match (n:Journal) where n.nombre='"+nombre_publisher+"' or n.publisher='"+nombre_publisher+"' return n";
         queryCompleta=true;
         console.log("c");
@@ -153,12 +163,16 @@ app.post("/busquedaRevista",(req,res)=>{
         const resultadoPromesa = session.run(query).subscribe({
             onNext: function (result) {
                 //console.log(result.get(0));
-                revistas.push(result.get(0));
+                revistasAux.push(result.get(0));
             },
             onCompleted: function () {
-                //console.log(revistas.length);
-                res.send(revistas);
-                session.close();
+               for (let index = 0; index < revistasAux.length; index++) {
+                var element = revistasAux[index].properties;
+                console.log(element);
+                revistas.push(element)
+            }    
+            res.send(revistas);
+            session.close();
             
             },
             onError: function (error) {
@@ -169,3 +183,34 @@ app.post("/busquedaRevista",(req,res)=>{
         res.send("Introduzca al menos un parametro de busqueda");
     }
 });
+
+app.post("/mostrarTodasRevista",(req,res)=>{
+    var session = driver.session();
+    console.log("Mostrar todas las revistas");
+
+    var query="";
+    var revistas=[];
+    var revistasAux=[];
+
+    query+= "match (n:Journal) return n";
+        
+    const resultadoPromesa = session.run(query).subscribe({
+            onNext: function (result) {
+                //console.log(result.get(0));
+                revistasAux.push(result.get(0));
+            },
+            onCompleted: function () {
+               for (let index = 0; index < revistasAux.length; index++) {
+                var element = revistasAux[index].properties;
+                console.log(element);
+                revistas.push(element)
+            }    
+            res.send(revistas);
+            session.close();
+            
+            },
+            onError: function (error) {
+                console.log(error + " error cojonudo");
+            }
+        })
+});    

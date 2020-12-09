@@ -1,0 +1,327 @@
+ CREATE CONSTRAINT ON (n:Journal) ASSERT (n.nombre) IS NODE KEY
+
+CREATE (staticalsoftware:Journal{nombre:"Journal of Statistical Software",emision:"1996-2020",sjr:9.444,publisher:"University of California at Los Angeles"}),
+(molecularsystem:Journal{nombre:"Molecular Systems Biology",emision:"2005-2020",sjr:7.338,publisher:"Wiley-Blackwell"}),
+(quantum:Journal{nombre:"npj Quantum Information",emision:"2015-2020",sjr:4.098,publisher:"Nature Partner Journals"}),
+(msystem:Journal{nombre:"mSystems",emision:"2016-2020",sjr:3.489,publisher:"American Society for Microbiology"}),
+(npj:Journal{nombre:"npj Computational Materials",emision:"2015-2020",sjr:3.44,publisher:"Nature Publishing Group"}),
+(scientificdata:Journal{nombre:"Scientific data",emision:"2014-2020",sjr:3.099,publisher:"Nature Publishing Group"}),
+(plos:Journal{nombre:"PLoS Computational Biology",emision:"2005-2020",sjr:2.91,publisher:"Public Library of Science"}),
+(gigascience:Journal{nombre:"GigaScience",emision:"2012-2020",sjr:2.639,publisher:"Oxford University Press"}),
+(ddbb:Journal{nombre:"Database : the journal of biological databases and curation",emision:"2009-2020",sjr:2.248,publisher:"Oxford University Press"}),
+(machinelearning:Journal{nombre:"Journal of Machine Learning Research",emision:"2001-2019",sjr:2.219,publisher:"Microtome Publishing"}),
+(apl:Journal{nombre:"APL Photonics",emision:"2016-2020",sjr:2.165,publisher:"AIP Publishing LLC"}),
+(npjsys:Journal{nombre:"npj Systems Biology and Applications",emision:"2015-2020",sjr:2.043,publisher:"Nature Publishing Group"}),
+(llt:Journal{nombre:"Language Learning and Technology",emision:"1997-1998, 2000-2019",sjr:2.011,publisher:"University of Hawaii Press"}),
+(sms:Journal{nombre:"Social Media and Society",emision:"2015-2020",sjr:1.993,publisher:"SAGE Publications Ltd"}),
+(csb:Journal{nombre:"Computational and Structural Biotechnology Journal",emision:"2015-2020",sjr:1.782,publisher:"Research Network of Computational and Structural Biotechnology"}),
+(bmc:Journal{nombre:"BMC Bioinformatics",emision:"2000-2020",sjr:1.626,publisher:"BioMed Central Ltd."}),
+(peerj:Journal{nombre:"PeerJ Computer Science",emision:"2015-2020",sjr:1.601,publisher:"PeerJ Inc."}),
+(kingsaud:Journal{nombre:"Journal of King Saud University, Engineering Sciences",emision:"1989-2020",sjr:0.764,publisher:"King Saud University"}),
+(ipa:Journal{nombre:"Information Processing in Agriculture",emision:"2014-2020",sjr:0.756,publisher:"Elsevier BV"}),
+(iperception:Journal{nombre:"i-Perception",emision:"2010-2020",sjr:0.751,publisher:"SAGE Publications Ltd"}),
+(est:Journal{nombre:"Engineering Science and Technology, an International Journal",emision:"2014-2020",sjr:0.75,publisher:"Elsevier BV"}),
+(frontiers:Journal{nombre:"Frontiers in Neurorobotics",emision:"2007-2020",sjr:0.75,publisher:"Frontiers Media S.A."}),
+(intbio:Journal{nombre:"International Biomechanics",emision:"2014-2020",sjr:0.75,publisher:"Taylor and Francis Ltd."}),
+(compudesig:Journal{nombre:"Journal of Computational Design and Engineering",emision:"2014-2019",sjr:0.739,publisher:""}),
+(visualization:Journal{nombre:"Visualization in Engineering",emision:"2013-2019",sjr:0.739,publisher:"Springer Open"}),
+(interdesign:Journal{nombre:"International Journal of Design",emision:"2007-2019",sjr:0.72,publisher:"National Taiwan University of Science and Technology"}),
+(engscien:Journal{nombre:"Journal of Electromagnetic Engineering and Science",emision:"2014, 2016-2020",sjr:0.707,publisher:"The Korean Institute of Electromagnetic Engineering and Science"}),
+(infotecno:Journal{nombre:"Journal of Information Technology Education:Research",emision:"2011-2019",sjr:0.707,publisher:"Informing Science Institute"}),
+(firstmonday:Journal{nombre:"First Monday",emision:"1996-2019",sjr:0.7,publisher:"First Monday"}),
+(sensing:Journal{nombre:"Sensing and Bio-Sensing Research",emision:"2014-2020",sjr:0.694,publisher:"Elsevier BV"}),
+(phonology:Journal{nombre:"Laboratory Phonology",emision:"2015-2019",sjr:0.693,publisher:"Ubiquity Press"}),
+(theorycompu:Journal{nombre:"Theory of Computing",emision:"2005, 2014-2019",sjr:0.679,publisher:"University of Chicago, Department of Computer Science"}),
+(forntiersrobotic:Journal{nombre:"Frontiers Robotics AI",emision:"2015-2020",sjr:0.675,publisher:"Frontiers Media S.A."}),
+(iacr:Journal{nombre:"IACR Transactions on Symmetric Cryptology",emision:"2018-2019",sjr:0.518,publisher:"Ruhr-Universitat Bochum"}),
+(eurasip:Journal{nombre:"Eurasip Journal on Information Security",emision:"2007-2020",sjr:0.517,publisher:"Springer Open"}),
+(procedia:Journal{nombre:"Procedia Manufacturing",emision:"2015-2019",sjr:0.516,publisher:"Elsevier BV"}),
+(fuzzy:Journal{nombre:"Iranian Journal of Fuzzy Systems",emision:"2004-2020",sjr:0.512,publisher:"University of Sistan and Baluchestan"}),
+(complexity:Journal{nombre:"Complexity",emision:"1995-2020",sjr:0.507,publisher:"Hindawi Limited"}),
+(logisticresearch:Journal{nombre:"Logistics Research",emision:"2009-2010, 2012-2019",sjr:0.489,publisher:"Bundesvereinigung Logistik (BVL)"}),
+(nordicdigital:Journal{nombre:"Nordic Journal of Digital Literacy",emision:"2012-2019",sjr:0.489,publisher:"Universitetsforlaget AS"}),
+(compuintelli:Journal{nombre:"International Journal of Computational Intelligence Systems",emision:"2008-2020",sjr:0.485,publisher:"Atlantis Press SARL"}),
+(imaging:Journal{nombre:"Journal of Imaging",emision:"2015-2020",sjr:0.485,publisher:"MDPI Multidisciplinary Digital Publishing Institute"}),
+(sensoractuator:Journal{nombre:"Journal of Sensor and Actuator Networks",emision:"2012-2020",sjr:0.481,publisher:"MDPI AG"}),
+(imageproce:Journal{nombre:"Image Processing On Line",emision:"2017-2020",sjr:0.477,publisher:"IPOL - Image Processing on Line"}),
+(graphalgo:Journal{nombre:"Journal of Graph Algorithms and Applications",emision:"1997, 2000-2020",sjr:0.471,publisher:"Brown University"}),
+(moderntransport:Journal{nombre:"Journal of Modern Transportation",emision:"2011-2019",sjr:0.468,publisher:"Springer International Publishing AG"}),
+(appnet:Journal{nombre:"Applied Network Science",emision:"2016-2020",sjr:0.466,publisher:"Springer Open"}),
+(digiteduca:Journal{nombre:"Digital Education Review",emision:"2010-2019",sjr:0.465,publisher:"Universitat de Barcelona"}),
+(studiesinfo:Journal{nombre:"Studies in Informatics and Control",emision:"2010-2019",sjr:0.462,publisher:"National Institute for R &amp; D in Informatics"}),
+(securitycomuni:Journal{nombre:"Security and Communication Networks",emision:"2009-2020",sjr:0.458,publisher:"Hindawi Limited"}),
+(cognitive:Journal{nombre:"Cognitive Studies",emision:"2018-2019",sjr:0.112,publisher:"Institute of Slavic Studies, Polish Academy of Sciences"}),
+(digihumanities:Journal{nombre:"Digital Humanities Quarterly",emision:"2018",sjr:0.112,publisher:""}),
+(electroscience:Journal{nombre:"Journal of Electronic Science and Technology",emision:"2015-2019",sjr:0.111,publisher:"University of Electronic Science and Technology of China"}),
+(interengineer:Journal{nombre:"International Journal of Engineering and Technology(UAE)",emision:"2016-2019",sjr:0.11,publisher:"Science Publishing Corporation Inc"}),
+(tecnomanage:Journal{nombre:"Journal of Information Technology Management",emision:"2017-2018",sjr:0.11,publisher:"University of Tehran"}),
+(softcompu:Journal{nombre:"International Journal of Soft Computing",emision:"2006-2016",sjr:0.109,publisher:"Medwell Publishing"}),
+(interjourn:Journal{nombre:"International Journal of Computing and Digital Systems",emision:"2018-2020",sjr:0.108,publisher:"University of Bahrain"}),
+(journcognitive:Journal{nombre:"Journal of Cognitive Science",emision:"2016-2019",sjr:0.108,publisher:"Institute for Cognitive Science at Seoul National University"}),
+(body:Journal{nombre:"Body, Space and Technology",emision:"2018-2019",sjr:0.107,publisher:"Open Library of Humanities"}),
+(crosstalk:Journal{nombre:"CrossTalk",emision:"2004-2017",sjr:0.107,publisher:"Software Technology Support Centers"}),
+
+
+
+(usa:Nacion{nombrePais:"United States"}),
+(uk:Nacion{nombrePais:"United Kingdom"}),
+(swed:Nacion{nombrePais:"Sweden"}),
+(saudi:Nacion{nombrePais:"Saudi Arabia"}),
+(china:Nacion{nombrePais:"China"}),
+(nether:Nacion{nombrePais:"Netherlands"}),
+(switz:Nacion{nombrePais:"Switzerland"}),
+(germ:Nacion{nombrePais:"Germany"}),
+(taiwan:Nacion{nombrePais:"Taiwan"}),
+(korea:Nacion{nombrePais:"South Korea"}),
+(iran:Nacion{nombrePais:"Iran"}),
+(egypt:Nacion{nombrePais:"Egypt"}),
+(france:Nacion{nombrePais:"France"}),
+(esp:Nacion{nombrePais:"Spain"}),
+(roman:Nacion{nombrePais:"Romania"}),
+(poland:Nacion{nombrePais:"Poland"}),
+(arab:Nacion{nombrePais:"United Arab Emirates"}),
+(pakis:Nacion{nombrePais:"Pakistan"}),
+(bahrain:Nacion{nombrePais:"Bahrain"}),
+(norway:Nacion{nombrePais:"Norway"}),
+
+(categoria:Area{nombre_area:"Computer Science"}),
+
+(software:Subcategoria{nombreCategoria:"Software"}),
+(compusystemsubcat:Subcategoria{nombreCategoria:"Computational Theory and Mathematics"}),
+(aisubcat:Subcategoria{nombreCategoria:"Artificial Intelligence"}),
+(compunetworkcomuni:Subcategoria{nombreCategoria:"Computer Networks and Communications"}),
+(compuscienceapimiscellaneous:Subcategoria{nombreCategoria:"Computer Science (miscellaneous)"}),
+(campuscienceapi:Subcategoria{nombreCategoria:"Computer Science Applications"}),
+(compugraph:Subcategoria{nombreCategoria:"Computer Graphics and Computer-Aided Design"}),
+(compuvision:Subcategoria{nombreCategoria:"Computer Vision and Pattern Recognition"}),
+(hardwarearch:Subcategoria{nombreCategoria:"Hardware and Architecture"}),
+(humancomputer:Subcategoria{nombreCategoria:"Human-Computer Interaction"}),
+(signaprocess:Subcategoria{nombreCategoria:"Signal Processing"}),
+(infosystemsubcat:Subcategoria{nombreCategoria:"Information Systems"})
+
+
+CREATE (staticalsoftware)-[:PAIS_PROCEDENCIA]->(usa),
+(molecularsystem)-[:PAIS_PROCEDENCIA]->(usa),
+(quantum)-[:PAIS_PROCEDENCIA]->(uk),
+(msystem)-[:PAIS_PROCEDENCIA]->(usa),
+(npj)-[:PAIS_PROCEDENCIA]->(uk),
+(scientificdata)-[:PAIS_PROCEDENCIA]->(uk),
+(plos)-[:PAIS_PROCEDENCIA]->(usa),
+(gigascience)-[:PAIS_PROCEDENCIA]->(uk),
+(ddbb)-[:PAIS_PROCEDENCIA]->(uk),
+(machinelearning)-[:PAIS_PROCEDENCIA]->(usa),
+(apl)-[:PAIS_PROCEDENCIA]->(usa),
+(npjsys)-[:PAIS_PROCEDENCIA]->(uk),
+(llt)-[:PAIS_PROCEDENCIA]->(usa),
+(sms)-[:PAIS_PROCEDENCIA]->(uk),
+(csb)-[:PAIS_PROCEDENCIA]->(swed),
+(bmc)-[:PAIS_PROCEDENCIA]->(uk),
+(peerj)-[:PAIS_PROCEDENCIA]->(usa),
+(kingsaud)-[:PAIS_PROCEDENCIA]->(saudi),
+(ipa)-[:PAIS_PROCEDENCIA]->(china),
+(iperception)-[:PAIS_PROCEDENCIA]->(uk),
+(est)-[:PAIS_PROCEDENCIA]->(nether),
+(frontiers)-[:PAIS_PROCEDENCIA]->(switz),
+(intbio)-[:PAIS_PROCEDENCIA]->(uk),
+(compudesig)-[:PAIS_PROCEDENCIA]->(nether),
+(visualization)-[:PAIS_PROCEDENCIA]->(germ),
+(interdesign)-[:PAIS_PROCEDENCIA]->(taiwan),
+(engscien)-[:PAIS_PROCEDENCIA]->(korea),
+(infotecno)-[:PAIS_PROCEDENCIA]->(usa),
+(firstmonday)-[:PAIS_PROCEDENCIA]->(usa),
+(sensing)-[:PAIS_PROCEDENCIA]->(nether),
+(phonology)-[:PAIS_PROCEDENCIA]->(germ),
+(theorycompu)-[:PAIS_PROCEDENCIA]->(usa),
+(forntiersrobotic)-[:PAIS_PROCEDENCIA]->(switz),
+(iacr)-[:PAIS_PROCEDENCIA]->(germ),
+(eurasip)-[:PAIS_PROCEDENCIA]->(uk),
+(procedia)-[:PAIS_PROCEDENCIA]->(nether),
+(fuzzy)-[:PAIS_PROCEDENCIA]->(iran),
+(complexity)-[:PAIS_PROCEDENCIA]->(egypt),
+(logisticresearch)-[:PAIS_PROCEDENCIA]->(germ),
+(nordicdigital)-[:PAIS_PROCEDENCIA]->(norway),
+(compuintelli)-[:PAIS_PROCEDENCIA]->(uk),
+(imaging)-[:PAIS_PROCEDENCIA]->(switz),
+(sensoractuator)-[:PAIS_PROCEDENCIA]->(switz),
+(imageproce)-[:PAIS_PROCEDENCIA]->(france),
+(graphalgo)-[:PAIS_PROCEDENCIA]->(usa),
+(moderntransport)-[:PAIS_PROCEDENCIA]->(china),
+(appnet)-[:PAIS_PROCEDENCIA]->(uk),
+(digiteduca)-[:PAIS_PROCEDENCIA]->(esp),
+(studiesinfo)-[:PAIS_PROCEDENCIA]->(roman),
+(securitycomuni)-[:PAIS_PROCEDENCIA]->(egypt),
+(cognitive)-[:PAIS_PROCEDENCIA]->(poland),
+(digihumanities)-[:PAIS_PROCEDENCIA]->(usa),
+(electroscience)-[:PAIS_PROCEDENCIA]->(china),
+(interengineer)-[:PAIS_PROCEDENCIA]->(arab),
+(tecnomanage)-[:PAIS_PROCEDENCIA]->(iran),
+(softcompu)-[:PAIS_PROCEDENCIA]->(pakis),
+(interjourn)-[:PAIS_PROCEDENCIA]->(bahrain),
+(journcognitive)-[:PAIS_PROCEDENCIA]->(korea),
+(body)-[:PAIS_PROCEDENCIA]->(uk),
+(crosstalk)-[:PAIS_PROCEDENCIA]->(usa),
+
+(categoria)-[:CONTIENE]->(software),
+(categoria)-[:CONTIENE]->(compusystemsubcat),
+(categoria)-[:CONTIENE]->(aisubcat),
+(categoria)-[:CONTIENE]->(compunetworkcomuni),
+(categoria)-[:CONTIENE]->(compuscienceapimiscellaneous),
+(categoria)-[:CONTIENE]->(campuscienceapi),
+(categoria)-[:CONTIENE]->(compugraph),
+(categoria)-[:CONTIENE]->(compuvision),
+(categoria)-[:CONTIENE]->(hardwarearch),
+(categoria)-[:CONTIENE]->(humancomputer),
+(categoria)-[:CONTIENE]->(signaprocess),
+(categoria)-[:CONTIENE]->(infosystemsubcat),
+
+
+(staticalsoftware)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(software),
+
+(molecularsystem)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compusystemsubcat),
+(molecularsystem)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(infosystemsubcat),
+
+(quantum)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compusystemsubcat),
+(quantum)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compunetworkcomuni),
+(quantum)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compuscienceapimiscellaneous),
+
+(msystem)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(campuscienceapi),
+
+(npj)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(campuscienceapi),
+
+(scientificdata)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(campuscienceapi),
+(scientificdata)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(infosystemsubcat),
+
+(plos)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compusystemsubcat),
+
+(gigascience)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(campuscienceapi),
+
+(ddbb)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(infosystemsubcat),
+
+(machinelearning)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(software),
+(machinelearning)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(aisubcat),
+
+(apl)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compunetworkcomuni),
+
+(npjsys)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(campuscienceapi),
+
+(llt)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(campuscienceapi),
+
+(sms)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(campuscienceapi),
+
+(csb)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(campuscienceapi),
+
+(bmc)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(campuscienceapi),
+
+(peerj)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compuscienceapimiscellaneous),
+
+(kingsaud)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compunetworkcomuni),
+
+(ipa)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+
+(iperception)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(aisubcat),
+
+(est)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compunetworkcomuni),
+(est)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(hardwarearch),
+
+(frontiers)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(aisubcat),
+
+(intbio)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+
+(compudesig)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compugraph),
+(compudesig)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(humancomputer),
+
+(visualization)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compugraph),
+(visualization)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+(visualization)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compuvision),
+
+(interdesign)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compugraph),
+
+(engscien)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compunetworkcomuni),
+
+(infotecno)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compuscienceapimiscellaneous),
+
+(firstmonday)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compunetworkcomuni),
+(firstmonday)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(humancomputer),
+
+(sensing)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(signaprocess),
+
+(phonology)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+
+(theorycompu)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(compusystemsubcat),
+
+(forntiersrobotic)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(aisubcat),
+(forntiersrobotic)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+
+(iacr)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+(iacr)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(software),
+
+(eurasip)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+(eurasip)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(signaprocess),
+
+(procedia)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(aisubcat),
+
+(fuzzy)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(aisubcat),
+(fuzzy)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+
+(complexity)-[:TIENE_ARTICULOS_SOBRE{valor:4,cuartil:"Q1"}]->(compuscienceapimiscellaneous),
+
+(logisticresearch)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+(logisticresearch)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(infosystemsubcat),
+
+(nordicdigital)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+
+(compuintelli)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(compuscienceapimiscellaneous),
+
+(imaging)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(compugraph),
+(imaging)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(compuvision),
+
+(sensoractuator)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(compunetworkcomuni),
+
+(imageproce)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(signaprocess),
+(imageproce)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(software),
+
+(graphalgo)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(compusystemsubcat),
+(graphalgo)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+(graphalgo)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(compuscienceapimiscellaneous),
+
+(moderntransport)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+
+(appnet)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(compunetworkcomuni),
+
+(digiteduca)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(campuscienceapi),
+
+(studiesinfo)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(compuscienceapimiscellaneous),
+
+(securitycomuni)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(compunetworkcomuni),
+(securitycomuni)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(infosystemsubcat),
+
+(securitycomuni)-[:TIENE_ARTICULOS_SOBRE{valor:3,cuartil:"Q2"}]->(compunetworkcomuni),
+
+(cognitive)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(compunetworkcomuni),
+
+(digihumanities)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(compunetworkcomuni),
+
+(electroscience)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(compunetworkcomuni),
+(electroscience)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(signaprocess),
+
+(studiesinfo)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(compuscienceapimiscellaneous),
+(studiesinfo)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(hardwarearch),
+
+(tecnomanage)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(infosystemsubcat),
+
+(softcompu)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(software),
+
+(interjourn)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(aisubcat),
+(interjourn)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(compugraph),
+(interjourn)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(compunetworkcomuni),
+(interjourn)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(humancomputer),
+(interjourn)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(infosystemsubcat),
+
+(journcognitive)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(aisubcat),
+
+(body)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(compugraph),
+(body)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(humancomputer),
+
+(crosstalk)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(humancomputer),
+(crosstalk)-[:TIENE_ARTICULOS_SOBRE{valor:1,cuartil:"Q4"}]->(software)
+
