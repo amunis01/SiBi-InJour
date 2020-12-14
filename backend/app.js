@@ -59,7 +59,7 @@ app.get("/cogerSubcategorias",(req,res)=>{
     })
 });
 
-app.get("/cogerAreaa",(req,res)=>{
+app.get("/cogerArea",(req,res)=>{
     var session = driver.session();
     console.log("Parte de dar el Area de estudio para hacer listado");
     var area=[];
