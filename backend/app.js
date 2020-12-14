@@ -32,7 +32,7 @@ app.get("/cogerPaises",(req,res)=>{
         
         },
         onError: function (error) {
-            console.log(error + " error cojonudo");
+            console.log(error + " error interesante");
         }
     })
 });
@@ -54,7 +54,7 @@ app.get("/cogerSubcategorias",(req,res)=>{
         
         },
         onError: function (error) {
-            console.log(error + " error cojonudo");
+            console.log(error + " error interesante");
         }
     })
 });
@@ -76,7 +76,7 @@ app.get("/cogerAreaa",(req,res)=>{
         
         },
         onError: function (error) {
-            console.log(error + " error cojonudo");
+            console.log(error + " error interesante");
         }
     })
 });
@@ -113,7 +113,7 @@ app.post("/recomendRevista",(req,res)=>{
         
         },
         onError: function (error) {
-            console.log(error + " error cojonudo");
+            console.log(error + " error interesante");
         }
     })
 });
@@ -176,7 +176,7 @@ app.post("/busquedaRevista",(req,res)=>{
             
             },
             onError: function (error) {
-                console.log(error + " error cojonudo");
+                console.log(error + " error interesante");
             }
         })
     }else{
@@ -210,7 +210,7 @@ app.post("/mostrarTodasRevista",(req,res)=>{
             
             },
             onError: function (error) {
-                console.log(error + " error cojonudo");
+                console.log(error + " error interesante");
             }
         })
 });    
