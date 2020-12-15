@@ -1,7 +1,7 @@
 # SiBi-InJour
 Repositorio con el código, memoria y presentación realizados de la aplicación InJour como trabajo de la asignatura de Sitemas de Gestión de Informacion y Business Intelligenc.
 
--> La carpeta backend y frontend es donde se encuentra el codigo de la Alicaci Web.
+-> La carpeta backend y frontend es donde se encuentra el codigo de la Aplicación Web.
 
 -> La carpeta videos contiene videos presentando la aplicación, como instalarla y y una muestra de su ejecución.
 
