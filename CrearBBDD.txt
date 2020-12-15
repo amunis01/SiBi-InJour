@@ -1,4 +1,4 @@
- CREATE CONSTRAINT ON (n:Journal) ASSERT (n.nombre) IS NODE KEY
+ CREATE CONSTRAINT ON (n:Journal) ASSERT (n.nombre) IS NODE KEY;
 
 CREATE (staticalsoftware:Journal{nombre:"Journal of Statistical Software",emision:"1996-2020",sjr:9.444,publisher:"University of California at Los Angeles"}),
 (molecularsystem:Journal{nombre:"Molecular Systems Biology",emision:"2005-2020",sjr:7.338,publisher:"Wiley-Blackwell"}),
